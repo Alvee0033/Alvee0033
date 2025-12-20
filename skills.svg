@@ -1,75 +1,81 @@
-<svg fill="none" viewBox="0 0 800 600" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        @keyframes glow {
-          0% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.2); }
-          50% { box-shadow: 0 0 20px rgba(88, 166, 255, 0.5); }
-          100% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.2); }
+        @keyframes scanline {
+          0% { transform: translateY(-500px); }
+          100% { transform: translateY(500px); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 0.4; }
         }
         .monitor {
-          background: #0d1117;
+          background: radial-gradient(circle at center, #0d1117 0%, #010409 100%);
           border: 1px solid #30363d;
           border-radius: 12px;
           padding: 30px;
           color: #c9d1d9;
           font-family: 'Fira Code', 'Courier New', monospace;
-          font-size: 14px;
-          line-height: 1.5;
-          animation: glow 4s infinite ease-in-out;
+          font-size: 13px;
+          line-height: 1.6;
+          box-shadow: 0 0 30px rgba(88, 166, 255, 0.15);
           position: relative;
+          overflow: hidden;
         }
-        .keyword { color: #ff7b72; }
+        .scanline {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background: rgba(88, 166, 255, 0.05);
+          animation: scanline 8s linear infinite;
+          pointer-events: none;
+        }
+        .keyword { color: #ff7b72; font-weight: bold; }
         .variable { color: #d2a8ff; }
         .operator { color: #79c0ff; }
         .string { color: #a5d6ff; }
-        .comment { color: #8b949e; }
+        .comment { color: #8b949e; font-style: italic; }
         .bracket { color: #d2a8ff; }
-        .indent { padding-left: 20px; }
-        .header {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 20px;
-          border-bottom: 1px solid #30363d;
-          padding-bottom: 10px;
-        }
-        .dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
-        .red { background: #ff5f56; }
-        .yellow { background: #ffbd2e; }
-        .green { background: #27c93f; }
+        .method { color: #d2a8ff; }
+        .line-num { color: #30363d; margin-right: 15px; user-select: none; }
+        .indent { padding-left: 20px; border-left: 1px solid #30363d; margin-left: 5px; }
+        .tag { background: rgba(88, 166, 255, 0.1); color: #58a6ff; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-left: 10px; }
+        .status-dot { height: 8px; width: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; background: #238636; box-shadow: 0 0 5px #238636; animation: pulse 2s infinite; }
       </style>
       <div class="monitor">
-        <div class="header">
-          <div>
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+        <div class="scanline"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #30363d; padding-bottom: 10px;">
+          <div style="display: flex; gap: 6px;">
+            <div style="height: 12px; width: 12px; border-radius: 50%; background: #ff5f56;"></div>
+            <div style="height: 12px; width: 12px; border-radius: 50%; background: #ffbd2e;"></div>
+            <div style="height: 12px; width: 12px; border-radius: 50%; background: #27c93f;"></div>
           </div>
-          <div style="color: #8b949e; font-size: 12px;">system_core.js</div>
+          <div style="color: #8b949e; font-size: 11px; letter-spacing: 1px;">DEBUGGER ACTIVE | SYSTEM_INITIALIZED.PY</div>
         </div>
-        <div>
-          <span class="keyword">const</span> <span class="variable">Alvee</span> <span class="operator">=</span> <span class="bracket">{</span><br/>
+        
+        <div><span class="line-num">01</span><span class="keyword">import</span> <span class="variable">ai_vision_core</span> <span class="keyword">as</span> <span class="variable">avc</span> <span class="tag">EXPERT</span></div>
+        <div><span class="line-num">02</span><span class="keyword">from</span> <span class="variable">high_performance_web</span> <span class="keyword">import</span> <span class="variable">next_engine</span> <span class="tag">EXPERT</span></div>
+        <div><span class="line-num">03</span></div>
+        <div><span class="line-num">04</span><span class="keyword">class</span> <span class="variable">EngineerProfile</span><span class="bracket">(</span><span class="keyword">DevStack</span><span class="bracket">)</span>:</div>
+        <div class="indent">
+          <div><span class="line-num">05</span><span class="keyword">def</span> <span class="method">__init__</span><span class="bracket">(</span><span class="variable">self</span><span class="bracket">)</span>:</div>
           <div class="indent">
-            <span class="keyword">role:</span> <span class="string">"Software Engineer | AI &amp; Web Specialist"</span>,<br/>
-            <span class="keyword">languages:</span> <span class="bracket">{</span><br/>
-            <div class="indent">
-              <span class="keyword">expert:</span> <span class="bracket">[</span><span class="string">"Python"</span>, <span class="string">"Next.js"</span>, <span class="string">"JavaScript"</span><span class="bracket">]</span>,<br/>
-              <span class="keyword">advanced:</span> <span class="bracket">[</span><span class="string">"CSS/Tailwind"</span>, <span class="string">"C++"</span>, <span class="string">"SQL"</span><span class="bracket">]</span>,<br/>
-              <span class="keyword">familiar:</span> <span class="bracket">[</span><span class="string">"Rust"</span>, <span class="string">"Java"</span>, <span class="string">"Bash"</span><span class="bracket">]</span><br/>
-            </div>
-            <span class="bracket">}</span>,<br/>
-            <span class="keyword">technologies:</span> <span class="bracket">{</span><br/>
-            <div class="indent">
-              <span class="keyword">vision:</span> <span class="bracket">[</span><span class="string">"MediaPipe"</span>, <span class="string">"OpenCV"</span>, <span class="string">"TensorFlow"</span><span class="bracket">]</span>,<br/>
-              <span class="keyword">backend:</span> <span class="bracket">[</span><span class="string">"FastAPI"</span>, <span class="string">"Flask"</span>, <span class="string">"PostgreSQL"</span><span class="bracket">]</span>,<br/>
-              <span class="keyword">frontend:</span> <span class="bracket">[</span><span class="string">"React"</span>, <span class="string">"Three.js"</span>, <span class="string">"GSAP"</span><span class="bracket">]</span>,<br/>
-              <span class="keyword">mobile:</span> <span class="bracket">[</span><span class="string">"Flutter"</span>, <span class="string">"Firebase"</span><span class="bracket">]</span><br/>
-            </div>
-            <span class="bracket">}</span>,<br/>
-            <span class="keyword">tools:</span> <span class="bracket">[</span><span class="string">"Git"</span>, <span class="string">"Docker"</span>, <span class="string">"Nginx"</span>, <span class="string">"Linux"</span><span class="bracket">]</span>,<br/>
-            <span class="keyword">philosophy:</span> <span class="string">"Engineering excellence through clean code."</span><br/>
+            <div><span class="line-num">06</span><span class="variable">self</span>.<span class="variable">core_languages</span> <span class="operator">=</span> <span class="bracket">[</span><span class="string">"Python"</span>, <span class="string">"Next.js"</span>, <span class="string">"TypeScript"</span><span class="bracket">]</span></div>
+            <div><span class="line-num">07</span><span class="variable">self</span>.<span class="variable">vision_stack</span> <span class="operator">=</span> <span class="bracket">{</span><span class="string">"framework"</span>: <span class="string">"MediaPipe"</span>, <span class="string">"lib"</span>: <span class="string">"PyTorch"</span><span class="bracket">}</span></div>
+            <div><span class="line-num">08</span><span class="variable">self</span>.<span class="variable">infrastructure</span> <span class="operator">=</span> <span class="bracket">[</span><span class="string">"Docker"</span>, <span class="string">"Nginx"</span>, <span class="string">"Firebase"</span><span class="bracket">]</span></div>
           </div>
-          <span class="bracket">}</span>;
+          <div><span class="line-num">09</span></div>
+          <div><span class="line-num">10</span><span class="keyword">async def</span> <span class="method">deploy_solution</span><span class="bracket">(</span><span class="variable">self</span>, <span class="variable">complexity</span><span class="bracket">)</span>:</div>
+          <div class="indent">
+            <div><span class="line-num">11</span><span class="comment"># Implementing engineering excellence...</span></div>
+            <div><span class="line-num">12</span><span class="keyword">await</span> <span class="variable">self</span>.<span class="variable">render_stunning_ui</span><span class="bracket">(</span><span class="bracket">)</span></div>
+            <div><span class="line-num">13</span><span class="keyword">return</span> <span class="variable">Status</span>.<span class="variable">SUCCESS</span> <span class="tag">OPTIMIZED</span></div>
+          </div>
+        </div>
+        
+        <div style="margin-top: 30px; padding-top: 15px; border-top: 1px dashed #30363d;">
+          <span class="status-dot"></span><span style="color: #8b949e; font-size: 12px;">SYSTEM_LOAD: PREPARING STUNNING LAYOUT... COMPLETE</span>
         </div>
       </div>
     </div>

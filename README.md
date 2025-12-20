@@ -1,18 +1,18 @@
 <div align="center">
-    <img width="25%" src="project_banner.gif"/>    
+    <img width="60%" src="project_banner.gif"/>    
     <br/>
     <br/>
     <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Itim&size=40&duration=2000&pause=3000&color=58a6ff&center=true&repeat=true&width=600&height=60&lines=Greetings+wanderer!+I+am+Alvee.;Software+Engineer+%7C+AI+Specialist;Building+the+Future+of+Vision+Apps.;" alt="Typing SVG" /></a>
 </div>
 
 <div align="center">
-    <a href="https://www.linkedin.com/in/alvee0033"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-    <a href="https://github.com/Alvee0033"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-    <a href="mailto:alvee@example.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+    <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Alvee0033&bg_color=0d1117&title_color=58a6ff&color=58a6ff&line=58a6ff&point=DEDEDE&hide_border=true&area=true" width="100%" />
 </div>
 
 <div align="center">
-    <a href="https://user-badge.committers.top/global/Alvee0033"><img src="https://user-badge.committers.top/global/Alvee0033.svg"></a>
+    <a href="https://www.linkedin.com/in/alvee0033"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+    <a href="https://github.com/Alvee0033"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+    <a href="mailto:alvee@example.com"><img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </div>
 
 ## Information Summary
