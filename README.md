@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="100%" src="stunning_banner.png"/>    
+    <img width="25%" src="project_banner.gif"/>    
     <br/>
     <br/>
     <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Itim&size=40&duration=2000&pause=3000&color=58a6ff&center=true&repeat=true&width=600&height=60&lines=Greetings+wanderer!+I+am+Alvee.;Software+Engineer+%7C+AI+Specialist;Building+the+Future+of+Vision+Apps.;" alt="Typing SVG" /></a>
