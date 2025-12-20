@@ -1,79 +1,78 @@
-<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 600" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        .grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 20px;
-          padding: 20px;
-          font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        @keyframes glow {
+          0% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.2); }
+          50% { box-shadow: 0 0 20px rgba(88, 166, 255, 0.5); }
+          100% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.2); }
         }
-        .card {
-          background: rgba(13, 17, 23, 0.8);
+        .monitor {
+          background: #0d1117;
           border: 1px solid #30363d;
           border-radius: 12px;
-          padding: 20px;
+          padding: 30px;
           color: #c9d1d9;
-          position: relative;
-          overflow: hidden;
-          transition: transform 0.3s ease;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-        .card::before {
-          content: '';
-          position: absolute;
-          top: 0; left: 0; right: 0;
-          height: 2px;
-          background: linear-gradient(90deg, #58a6ff, #bc8cff);
-        }
-        .card-title {
+          font-family: 'Fira Code', 'Courier New', monospace;
           font-size: 14px;
-          font-weight: 700;
-          color: #58a6ff;
-          text-transform: uppercase;
-          margin-bottom: 10px;
-          letter-spacing: 1px;
+          line-height: 1.5;
+          animation: glow 4s infinite ease-in-out;
+          position: relative;
         }
-        .skill-list {
-          font-size: 13px;
-          line-height: 1.6;
-          color: #8b949e;
+        .keyword { color: #ff7b72; }
+        .variable { color: #d2a8ff; }
+        .operator { color: #79c0ff; }
+        .string { color: #a5d6ff; }
+        .comment { color: #8b949e; }
+        .bracket { color: #d2a8ff; }
+        .indent { padding-left: 20px; }
+        .header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #30363d;
+          padding-bottom: 10px;
         }
-        .highlight {
-          color: #f0f6fc;
-          font-weight: 500;
-        }
+        .dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+        .red { background: #ff5f56; }
+        .yellow { background: #ffbd2e; }
+        .green { background: #27c93f; }
       </style>
-      <div class="grid">
-        <div class="card">
-          <div class="card-title">Frontend Engine</div>
-          <div class="skill-list">
-            • <span class="highlight">Next.js</span> Architecture<br/>
-            • <span class="highlight">React</span> ecosystem<br/>
-            • Specialized <span class="highlight">CSS</span> Styling<br/>
-            • Modern <span class="highlight">JavaScript</span>
+      <div class="monitor">
+        <div class="header">
+          <div>
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
           </div>
+          <div style="color: #8b949e; font-size: 12px;">system_core.js</div>
         </div>
-        <div class="card">
-          <div class="card-title">Intelligence &amp; AI</div>
-          <div class="skill-list">
-            • <span class="highlight">MediaPipe</span> Vision<br/>
-            • <span class="highlight">Python</span> Backend<br/>
-            • <span class="highlight">TensorFlow</span> Systems<br/>
-            • <span class="highlight">PyTorch</span> Research
+        <div>
+          <span class="keyword">const</span> <span class="variable">Alvee</span> <span class="operator">=</span> <span class="bracket">{</span><br/>
+          <div class="indent">
+            <span class="keyword">role:</span> <span class="string">"Software Engineer | AI &amp; Web Specialist"</span>,<br/>
+            <span class="keyword">languages:</span> <span class="bracket">{</span><br/>
+            <div class="indent">
+              <span class="keyword">expert:</span> <span class="bracket">[</span><span class="string">"Python"</span>, <span class="string">"Next.js"</span>, <span class="string">"JavaScript"</span><span class="bracket">]</span>,<br/>
+              <span class="keyword">advanced:</span> <span class="bracket">[</span><span class="string">"CSS/Tailwind"</span>, <span class="string">"C++"</span>, <span class="string">"SQL"</span><span class="bracket">]</span>,<br/>
+              <span class="keyword">familiar:</span> <span class="bracket">[</span><span class="string">"Rust"</span>, <span class="string">"Java"</span>, <span class="string">"Bash"</span><span class="bracket">]</span><br/>
+            </div>
+            <span class="bracket">}</span>,<br/>
+            <span class="keyword">technologies:</span> <span class="bracket">{</span><br/>
+            <div class="indent">
+              <span class="keyword">vision:</span> <span class="bracket">[</span><span class="string">"MediaPipe"</span>, <span class="string">"OpenCV"</span>, <span class="string">"TensorFlow"</span><span class="bracket">]</span>,<br/>
+              <span class="keyword">backend:</span> <span class="bracket">[</span><span class="string">"FastAPI"</span>, <span class="string">"Flask"</span>, <span class="string">"PostgreSQL"</span><span class="bracket">]</span>,<br/>
+              <span class="keyword">frontend:</span> <span class="bracket">[</span><span class="string">"React"</span>, <span class="string">"Three.js"</span>, <span class="string">"GSAP"</span><span class="bracket">]</span>,<br/>
+              <span class="keyword">mobile:</span> <span class="bracket">[</span><span class="string">"Flutter"</span>, <span class="string">"Firebase"</span><span class="bracket">]</span><br/>
+            </div>
+            <span class="bracket">}</span>,<br/>
+            <span class="keyword">tools:</span> <span class="bracket">[</span><span class="string">"Git"</span>, <span class="string">"Docker"</span>, <span class="string">"Nginx"</span>, <span class="string">"Linux"</span><span class="bracket">]</span>,<br/>
+            <span class="keyword">philosophy:</span> <span class="string">"Engineering excellence through clean code."</span><br/>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-title">Core &amp; DevOps</div>
-          <div class="skill-list">
-            • Systems <span class="highlight">Automation</span><br/>
-            • <span class="highlight">Git</span> Versioning<br/>
-            • <span class="highlight">Firebase</span> Cloud<br/>
-            • <span class="highlight">Flutter</span> Mobile
-          </div>
+          <span class="bracket">}</span>;
         </div>
       </div>
     </div>
   </foreignObject>
 </svg>
+ village
