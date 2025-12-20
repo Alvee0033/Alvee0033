@@ -28,13 +28,25 @@ At the moment I am optimizing Mediapipe-based vision systems and expanding my ex
   <img src="skills.svg" width="100%" />
 </p>
 
-## Project Organizations
+## Project Development
 
 <div align="center">
 <table>
 <tr>
-<td><a href="https://github.com/Alvee0033/face-tracking-project"><img src="stunning_banner.png" width="330" height="180"/></a></td>
-<td><a href="https://github.com/Alvee0033/aidx-medical-app"><img src="stunning_banner.png" width="330" height="180"/></a></td>
+<td width="50%" valign="top">
+<a href="https://github.com/Alvee0033/face-tracking-project"><img src="project_banner.gif" width="100%"/></a>
+<br/>
+<b>Face Tracking System</b>
+<br/>
+<small>Real-time feature detection and rendering system utilizing MediaPipe and Next.js Architecture.</small>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/Alvee0033/aidx-medical-app"><img src="project_banner.gif" width="100%"/></a>
+<br/>
+<b>Aidx Medical Platform</b>
+<br/>
+<small>Comprehensive medical infrastructure with integrated cloud synchronicity and AI assistance.</small>
+</td>
 </tr>
 </table>
 </div>
