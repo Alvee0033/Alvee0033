@@ -1,48 +1,45 @@
-![Header](header.svg)
-
-### Professional Summary
-
-Software Engineer with a specialized focus on building high-performance web applications and integrated AI solutions. Expertise includes real-time computer vision, scalable frontend architectures, and cross-platform development. Currently optimizing real-time face tracking systems and exploring advanced pose estimation algorithms.
-
----
-
-### Core Competencies
-
-| Domain | Technologies |
-| :--- | :--- |
-| **Frontend** | Next.js, React, JavaScript (ES6+), CSS/Tailwind CSS |
-| **Backend & AI** | Python (FastAPI, Flask), TensorFlow, PyTorch, MediaPipe |
-| **Mobile** | Flutter, Firebase Integration |
-| **Infrastructure** | Git, GitHub Actions, Linux System Administration |
-
----
-
-### Technical Statistics
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=transparent&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&border_color=30363d" alt="GitHub Stats" />
+  <img src="stunning_banner.png" width="100%" />
 </p>
 
+# Alvee 
+
+### Engineering the Future of Interactive AI
+Focused on bridging the gap between advanced Computer Vision and high-performance Web Architectures. I specialize in creating seamless, intelligent experiences that push the boundaries of modern technology.
+
+---
+
+### Specialist Skillset
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=transparent&title_color=58a6ff&text_color=c9d1d9&border_color=30363d" alt="Most Used Languages" />
+  <img src="skills.svg" width="100%" />
 </p>
 
 ---
 
-### Recent Developments
+### Contribution Metrics & Performance
 
-*   **Face Tracking Project**: Real-time feature detection and rendering system utilizing MediaPipe and Next.js.
-*   **Aidx Medical Platform**: Comprehensive medical service integration for specialized healthcare support.
-
----
-
-### Contact Information
-
-Detailed professional inquiries and collaboration requests:
-*   [LinkedIn Profile](https://www.linkedin.com/in/alvee0033)
-*   [GitHub Repositories](https://github.com/Alvee0033?tab=repositories)
-
----
 <p align="center">
-  <i>Engineering excellence through clean code and scalable design.</i>
+  <img src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=tokyonight&hide_border=false&title_color=7aa2f7&text_color=c0caf5&icon_color=7aa2f7&border_color=1a1b26" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=tokyonight&hide_border=false&title_color=7aa2f7&text_color=c0caf5&border_color=1a1b26" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Alvee0033&theme=tokyonight&hide_border=false&border=1a1b26&stroke=7aa2f7&ring=7aa2f7&fire=7aa2f7&currStreakNum=7aa2f7" width="97%" />
+</p>
+
+---
+
+### Featured Directives
+
+*   **Real-Time Biosystems**: Advanced face tracking and feature registration using MediaPipe ecosystem.
+*   **Infrastructure Systems**: Scalable medical assistance platform with integrated cloud synchronicity.
+
+---
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <i>The intersection of elegant architecture and machine intelligence.</i>
 </p>
