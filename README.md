@@ -70,7 +70,7 @@ I am a versatile **Fullstack Developer** and **AI/ML Specialist** with a passion
       </td>
       <td valign="top" width="50%">
         <div align="center">
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=Alvee0033&theme=tokyonight&hide_border=true&background=00000000" alt="GitHub Streak" />
+          <img src="https://streak-stats.demolab.com/?user=Alvee0033&theme=tokyonight&hide_border=true&background=00000000" alt="GitHub Streak" />
         </div>
       </td>
     </tr>
