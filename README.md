@@ -39,24 +39,24 @@
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍�� About Me
 
-```typescript
-const morsalinAlvee = {
-    location: "Bangladesh 🇧🇩",
-    role: "Fullstack Developer & AI/ML Specialist",
-    currentFocus: "Building intelligent mobile & web applications",
-    expertise: [
-        "Mobile Development (Flutter)",
-        "AI & Machine Learning",
-        "Full Stack Web Development",
-        "Cloud Architecture & DevOps"
-    ],
-    learning: ["Advanced Deep Learning", "Kubernetes", "System Design"],
-    hobbies: ["Problem Solving", "Open Source", "Tech Blogging"],
-    funFact: "I debug with console.log and I'm not ashamed! 😄"
-};
-```
+<table>
+<tr>
+<td>
+
+🎯 **Who I Am**
+
+I'm a passionate **Fullstack Developer** and **AI/ML Specialist** from Bangladesh 🇧🇩, dedicated to crafting intelligent and scalable applications that make a difference.
+
+**🔭 Current Focus:** Building intelligent mobile & web applications  
+**🌱 Learning:** Advanced Deep Learning, Kubernetes, System Design  
+**💡 Expertise:** Mobile Development (Flutter), AI & Machine Learning, Full Stack Web, Cloud Architecture  
+**⚡ Fun Fact:** I debug with console.log and I'm not ashamed!
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -133,6 +133,9 @@ const morsalinAlvee = {
 <div align="center">
   <a href="https://github.com/Alvee0033/hisab">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=hisab&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9" alt="Hisab Repo" />
+  </a>
+  <a href="https://github.com/Alvee0033/Aidx">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=Aidx&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9" alt="Aidx Repo" />
   </a>
 </div>
 
