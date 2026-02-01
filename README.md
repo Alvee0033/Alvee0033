@@ -1,180 +1,135 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Morsalin%20Alvee&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Fullstack%20Developer%20|%20AI/ML%20Specialist&descAlignY=55&descAlign=50"/>
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:6366f1,100:a855f7&height=160&section=header&text=Morsalin%20Islam%20Alvee&fontSize=72&fontAlignY=40&animation=fadeIn&fontColor=ffffff" alt="Header" />
+</p>
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=36BCF7FF&center=true&vCenter=true&width=600&lines=Fullstack+Developer+%F0%9F%92%BB;AI+%26+ML+Specialist+%F0%9F%A4%96;Mobile+App+Developer+%F0%9F%93%B1;Building+Scalable+Solutions+%F0%9F%9A%80;Open+Source+Contributor+%E2%9C%A8" alt="Typing SVG" />
-</div>
+<p align="center">
+  <strong>Fullstack Developer</strong> · <strong>AI/ML</strong> · <strong>Mobile</strong>
+</p>
 
-<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter_%7C_React_%7C_Node-Developer-6366f1?style=for-the-badge" alt="Stack" />
+  <img src="https://img.shields.io/badge/Bangladesh-🇧🇩-0ea5e9?style=for-the-badge" alt="Location" />
+</p>
 
-<div align="center">
-  <a href="https://github.com/Alvee0033">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-  <a href="https://linkedin.com/in/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="mailto:contact@example.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://twitter.com/">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
-  </a>
-</div>
+<p align="center">
+  <a href="https://github.com/Alvee0033"><img src="https://img.shields.io/badge/GitHub-Alvee0033-181717?style=flat-square&logo=github" alt="GitHub" /></a>
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="mailto:contact@example.com"><img src="https://img.shields.io/badge/Email-Reach%20out-EA4335?style=flat-square&logo=gmail" alt="Email" /></a>
+  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/Twitter-@me-1DA1F2?style=flat-square&logo=x" alt="Twitter" /></a>
+</p>
 
-<br/>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Alvee0033&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/api/?username=Alvee0033&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=7" alt="GitHub Trophies" />
-</div>
-
-<br/>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Alvee0033&label=Profile%20views&color=6366f1&style=flat-square" alt="Profile views" />
+</p>
 
 ---
 
-## 👨‍�� About Me
+### 👋 About
+
+I build **scalable apps** and **AI/ML solutions** from Bangladesh. I like clean code, good UX, and shipping things that work.
+
+| | |
+|---|---|
+| **Focus** | Mobile & web apps, AI/ML |
+| **Learning** | Deep Learning, Kubernetes, system design |
+| **Stack** | Flutter, React/Next, Node, Python, TensorFlow/PyTorch |
+| **Fun fact** | I debug with `console.log` and I'm not ashamed |
+
+---
+
+### 🛠 Stack
 
 <table>
 <tr>
-<td>
+<td width="50%">
 
-🎯 **Who I Am**
+**Frontend & Mobile**
+<br/>
+<img src="https://skillicons.dev/icons?i=flutter,dart,react,nextjs,typescript,javascript,html,css,tailwind,bootstrap&theme=dark" height="28" />
 
-I'm a passionate **Fullstack Developer** and **AI/ML Specialist** from Bangladesh 🇧🇩, dedicated to crafting intelligent and scalable applications that make a difference.
+</td>
+<td width="50%">
 
-**🔭 Current Focus:** Building intelligent mobile & web applications  
-**🌱 Learning:** Advanced Deep Learning, Kubernetes, System Design  
-**💡 Expertise:** Mobile Development (Flutter), AI & Machine Learning, Full Stack Web, Cloud Architecture  
-**⚡ Fun Fact:** I debug with console.log and I'm not ashamed!
+**AI & Data**
+<br/>
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv&theme=dark" height="28" />
+<img src="https://img.shields.io/badge/Pandas-NumPy-Jupyter-150458?style=flat-square&logo=jupyter" height="28" />
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Backend & DB**
+<br/>
+<img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi,flask,firebase,mongodb,postgres,mysql,redis&theme=dark" height="28" />
+
+</td>
+<td width="50%">
+
+**DevOps & Tools**
+<br/>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,linux,nginx,git,github,figma,vscode&theme=dark" height="28" />
 
 </td>
 </tr>
 </table>
 
-<br/>
+---
+
+### 📊 Stats
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=a855f7&count_private=true&include_all_commits=true" alt="Stats" />
+  <img width="48%" src="https://streak-stats.demolab.com?user=Alvee0033&theme=radical&hide_border=true&background=0d1117&ring=6366f1&fire=a855f7&currStreakLabel=6366f1" alt="Streak" />
+</p>
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=6366f1&text_color=c9d1d9&langs_count=8" alt="Top langs" />
+  <img width="48%" src="https://github-readme-activity-graph.vercel.app/graph?username=Alvee0033&theme=react-dark&hide_border=true&bg_color=0d1117&color=6366f1&line=a855f7&point=6366f1" alt="Activity" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/api/?username=Alvee0033&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=7" alt="Trophies" />
+</p>
 
 ---
 
-## 🛠️ Technology Arsenal
+### 📌 Pinned
 
-### 📱 Mobile & Frontend Development
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,react,nextjs,typescript,javascript,html,css,tailwind,bootstrap,materialui&theme=dark&perline=11" />
-</p>
-
-### 🧠 AI, ML & Data Science
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,sklearn&theme=dark&perline=5" />
-  <br/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
-</p>
-
-### ⚙️ Backend & Databases
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi,flask,firebase,mongodb,postgres,mysql,redis&theme=dark&perline=10" />
-</p>
-
-### ☁️ DevOps & Cloud
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,linux,nginx,git,github,gitlab&theme=dark&perline=9" />
-</p>
-
-### 🎨 Design & Tools
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=figma,vscode,postman,androidstudio&theme=dark&perline=4" />
-</p>
-
-<br/>
-
----
-
-## 📊 GitHub Statistics
-
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=Alvee0033&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
-  <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=Alvee0033&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff" alt="Activity Graph" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Alvee0033&theme=tokyonight" alt="Profile Details" />
-</div>
-
-<br/>
-
----
-
-## 🔥 Recent Activity
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
-<br/>
-
----
-
-## 💡 Featured Repositories
-
-<div align="center">
   <a href="https://github.com/Alvee0033/hisab">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=hisab&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9" alt="Hisab Repo" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=hisab&theme=radical&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=a855f7" alt="hisab" width="400" />
   </a>
   <a href="https://github.com/Alvee0033/Aidx">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=Aidx&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9" alt="Aidx Repo" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=Aidx&theme=radical&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=a855f7" alt="Aidx" width="400" />
   </a>
-</div>
-
-<br/>
+</p>
 
 ---
 
-## 📈 Contribution Graph
+### 🎯 2025
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alvee0033&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&hide_border=true" alt="Contribution Graph" />
-</div>
-
-<br/>
-
----
-
-## 🎯 2025 Goals
-
-- 🚀 Contribute to more Open Source projects
-- 📱 Launch a production-ready Flutter app
-- 🧠 Master Advanced Machine Learning techniques
-- ☁️ Get AWS Solutions Architect certification
-- ✍️ Write technical blog posts regularly
-
-<br/>
+- Contribute to more open source
+- Ship a production Flutter app
+- Go deeper in ML / DL
+- AWS Solutions Architect path
+- Write more (blog / docs)
 
 ---
 
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />
-</div>
+### 📜 Quote
 
-<br/>
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Quote" />
+</p>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
-</div>
+---
 
-<div align="center">
-  <sub>⭐️ From <a href="https://github.com/Alvee0033">Morsalin Alvee</a> with ❤️</sub>
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:6366f1,100:a855f7&height=80&section=footer" alt="Footer" />
+</p>
+
+<p align="center">
+  <sub>Morsalin Islam Alvee · <a href="https://github.com/Alvee0033">GitHub</a></sub>
+</p>
