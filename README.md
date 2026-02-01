@@ -79,18 +79,14 @@ I build **scalable apps** and **AI/ML solutions** from Bangladesh. I like clean 
 
 ### 📊 Stats
 
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=a855f7&count_private=true&include_all_commits=true" alt="Stats" />
-  <img width="48%" src="https://streak-stats.demolab.com?user=Alvee0033&theme=radical&hide_border=true&background=0d1117&ring=6366f1&fire=a855f7&currStreakLabel=6366f1" alt="Streak" />
-</p>
+| <a href="https://github.com/Alvee0033"><img src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="100%" alt="Alvee0033's GitHub stats" /></a> | <a href="https://github.com/Alvee0033"><img src="https://streak-stats.demolab.com/?user=Alvee0033&theme=tokyonight&hide_border=true" width="100%" alt="Alvee0033's streak" /></a> |
+|:---:|:---:|
+
+| <a href="https://github.com/Alvee0033"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="100%" alt="Top languages" /></a> | <a href="https://github.com/Alvee0033"><img src="https://github-readme-activity-graph.vercel.app/graph?username=Alvee0033&theme=tokyo-night&hide_border=true" width="100%" alt="Activity graph" /></a> |
+|:---:|:---:|
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=6366f1&text_color=c9d1d9&langs_count=8" alt="Top langs" />
-  <img width="48%" src="https://github-readme-activity-graph.vercel.app/graph?username=Alvee0033&theme=react-dark&hide_border=true&bg_color=0d1117&color=6366f1&line=a855f7&point=6366f1" alt="Activity" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/api/?username=Alvee0033&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=7" alt="Trophies" />
+  <a href="https://github.com/Alvee0033"><img src="https://github-profile-trophy.vercel.app/?username=Alvee0033&theme=tokyonight&no-frame=true&no-bg=true&column=7" width="100%" alt="Trophies" /></a>
 </p>
 
 ---
