@@ -84,10 +84,7 @@ Building the future, one commit at a time.
 <div align="center">
 
 <a href="https://github.com/Alvee0033">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" alt="Alvee's Github Stats" />
-</a>
-<a href="https://github.com/Alvee0033">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Alvee's Top Languages" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=donut&theme=radical&hide_border=true&langs_count=8" alt="Alvee's Top Languages" />
 </a>
 
 <br/><br/>
