@@ -84,7 +84,7 @@ Building the future, one commit at a time.
 <div align="center">
 
 <a href="https://github.com/Alvee0033">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=donut&theme=radical&hide_border=true&langs_count=8" alt="Alvee's Top Languages" />
+  <img align="center" src="./languages.svg" alt="Animated Top Languages" />
 </a>
 
 <br/><br/>
