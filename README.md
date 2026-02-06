@@ -1,6 +1,8 @@
 <div align="center">
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=435&lines=Hi+there!+%F0%9F%91%8B+I'm+Alvee;Fullstack+Developer;AI%2FML+Specialist;Mobile+App+Developer" alt="Typing SVG" />
+  <img src="./header.svg" width="100%" alt="Animated Header" />
+
+  <br/><br/>
 
   <p align="center">
       <a href="https://github.com/Alvee0033">
@@ -21,13 +23,6 @@
       <img src="https://komarev.com/ghpvc/?username=Alvee0033&color=0ea5e9&style=flat-square&label=Profile+Views" alt="Profile views" />
   </p>
 
-</div>
-
-<br/>
-
-<div align="center"> 
-  <b>Visitor Count</b><br>
-  <img src="https://profile-counter.glitch.me/Alvee0033/count.svg" />
 </div>
 
 <br/>
@@ -75,16 +70,17 @@ I'm a passionate **Fullstack Developer** and **AI/ML Specialist** from **Banglad
 <div align="center">
 
 <a href="https://github.com/Alvee0033">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Alvee's Github Stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Alvee0033&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" alt="Alvee's Github Stats" />
 </a>
 <a href="https://github.com/Alvee0033">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Alvee's Top Languages" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Alvee's Top Languages" />
 </a>
 
 <br/><br/>
 
+<!-- Using simplified URL for Streak stats to fallback better if theme fails -->
 <a href="https://github.com/Alvee0033">
-  <img align="center" src="https://streak-stats.demolab.com/?user=Alvee0033&theme=tokyonight&hide_border=true" alt="Alvee's Streak" />
+  <img align="center" src="https://streak-stats.demolab.com/?user=Alvee0033&theme=github_dark&hide_border=true" alt="Alvee's Streak" />
 </a>
 
 </div>
@@ -94,7 +90,7 @@ I'm a passionate **Fullstack Developer** and **AI/ML Specialist** from **Banglad
 ## 🏆 Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Alvee0033&theme=tokyonight&no-frame=true&no-bg=true&column=7" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Alvee0033&theme=github_dark&no-frame=true&no-bg=true&column=7" />
 </div>
 
 <br/>
@@ -102,6 +98,7 @@ I'm a passionate **Fullstack Developer** and **AI/ML Specialist** from **Banglad
 ## 🐍 Contribution Snake
 
 <div align="center">
+  <!-- Note: This will be empty until the GitHub Action runs successfully -->
   <img src="https://github.com/Alvee0033/Alvee0033/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
 
@@ -115,12 +112,12 @@ I'm a passionate **Fullstack Developer** and **AI/ML Specialist** from **Banglad
   <tr>
     <td width="50%">
       <a href="https://github.com/Alvee0033/hisab">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=hisab&theme=tokyonight&hide_border=true" alt="hisab" />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=hisab&theme=github_dark&hide_border=true" alt="hisab" />
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/Alvee0033/Aidx">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=Aidx&theme=tokyonight&hide_border=true" alt="Aidx" />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=Aidx&theme=github_dark&hide_border=true" alt="Aidx" />
       </a>
     </td>
   </tr>
