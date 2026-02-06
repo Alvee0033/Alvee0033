@@ -1,0 +1,26 @@
+<svg width="180" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="neon-mail">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="5" y="5" width="170" height="40" rx="10" fill="#0d1117" stroke="#ea4335" stroke-width="2" filter="url(#neon-mail)">
+     <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <path transform="translate(45, 13) scale(1.2)" fill="#ea4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819v-5.818l-1.966-2.536-4.579 5.864h-3.664l-1.966-2.536-2.545 3.032v-11.884l12.727 9.877 12.727-9.877zm-9.545 8.163l-3.182-2.527-3.182 2.527-4.909-3.793v-2.734l8.091 6.305 8.091-6.305v2.734l-4.909 3.793z"/>
+  <!-- Just a generic envelope icon if the above is wonky -->
+  <path transform="translate(48, 15) scale(0.04)" fill="#ea4335" d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/>
+
+  
+  <text x="85" y="30" font-family="monospace" font-size="16" font-weight="bold" fill="#ea4335" filter="url(#neon-mail)">EMAIL</text>
+  
+  <rect x="5" y="5" width="170" height="40" rx="10" fill="none" stroke="#ea4335" stroke-width="2" stroke-dasharray="30 400" stroke-dashoffset="430">
+      <animate attributeName="stroke-dashoffset" from="430" to="0" dur="3s" repeatCount="indefinite" />
+  </rect>
+</svg>
