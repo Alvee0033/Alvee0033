@@ -32,14 +32,9 @@
 I'm a **Fullstack Developer** and **AI/ML Specialist** from **Bangladesh 🇧🇩**. 
 Building the future, one commit at a time.
 
-```javascript
-const alvee = {
-  code: ["Python", "JavaScript", "Dart", "C++"],
-  tools: ["React", "Flutter", "PyTorch", "AWS"],
-  mission: "Build scalable, intelligent systems.",
-  funFact: "I debug with telepathy (and console.log)"
-};
-```
+<div align="center">
+  <img src="./terminal.svg" width="100%" alt="Terminal Status" />
+</div>
 
 <br/>
 
