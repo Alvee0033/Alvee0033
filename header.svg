@@ -1,55 +1,78 @@
 <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="800" height="400" fill="#0d0221" rx="15" />
-  
-  <!-- Animated Grid/Matrix Effect -->
   <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 255, 65, 0.05)" stroke-width="1"/>
+    <!-- CRT Scanline Pattern -->
+    <pattern id="scanlines" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100%" height="2" fill="none" />
+      <rect x="0" y="2" width="100%" height="2" fill="rgba(0,0,0,0.3)" />
     </pattern>
-    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#008f11;stop-opacity:1" />
-    </linearGradient>
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Glitch Filter -->
+    <filter id="glitch">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.005" numOctaves="1" result="noise" seed="0"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
   </defs>
-  <rect width="800" height="400" fill="url(#grid)" />
 
-  <!-- Digital Rain / Matrix Text Fall -->
-  <text x="50" y="-20" fill="rgba(0, 255, 65, 0.1)" font-family="monospace" font-size="20">
-    1010101010101010
-    <animate attributeName="y" from="-20" to="420" dur="4s" repeatCount="indefinite" />
-  </text>
-  <text x="150" y="-50" fill="rgba(0, 255, 65, 0.1)" font-family="monospace" font-size="20">
-    00110011001100
-    <animate attributeName="y" from="-50" to="450" dur="5s" repeatCount="indefinite" />
-  </text>
-  <text x="650" y="-30" fill="rgba(0, 255, 65, 0.1)" font-family="monospace" font-size="20">
-    111000111000
-    <animate attributeName="y" from="-30" to="430" dur="3s" repeatCount="indefinite" />
-  </text>
+  <!-- Background: CRT Screen Dark -->
+  <rect width="800" height="400" fill="#050a0f" rx="15" />
+  
+  <!-- Outer Glow/Border -->
+  <rect x="5" y="5" width="790" height="390" rx="10" fill="none" stroke="#00ff41" stroke-width="2" stroke-opacity="0.5" filter="url(#neonGlow)">
+    <animate attributeName="stroke-opacity" values="0.5;0.8;0.5" dur="2s" repeatCount="indefinite" />
+  </rect>
 
-  <!-- Main Title -->
-  <text x="400" y="180" text-anchor="middle" font-family="'Courier New', monospace" font-weight="900" font-size="70" fill="#00ff41" stroke="#000" stroke-width="1" letter-spacing="5">
+  <!-- Scanlines Overlay -->
+  <rect width="800" height="400" fill="url(#scanlines)" opacity="0.4" pointer-events="none" />
+
+  <!-- Animated Typing Prompt -->
+  <text x="50" y="80" font-family="'Courier New', monospace" font-size="20" fill="#00ff41" filter="url(#neonGlow)">
+    <tspan>> initializing_profile...</tspan>
+    <animate attributeName="opacity" values="0;1;1;1" dur="4s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Main Title: ALVEE (Neon + Glitch) -->
+  <text x="400" y="200" text-anchor="middle" font-family="monospace" font-weight="900" font-size="90" fill="none" stroke="#00ff41" stroke-width="2" filter="url(#neonGlow)" letter-spacing="10">
     ALVEE
-    <animate attributeName="opacity" values="1;0.8;1;0.9;1" dur="0.2s" repeatCount="indefinite" />
+    <animate attributeName="stroke-dasharray" from="0, 1000" to="1000, 0" dur="3s" fill="freeze" />
+    <animate attributeName="opacity" values="1;0.8;1;0.1;1;0.9;1" dur="5s" repeatCount="indefinite" />
+  </text>
+  <text x="400" y="200" text-anchor="middle" font-family="monospace" font-weight="900" font-size="90" fill="#fff" opacity="0.1" letter-spacing="10">
+    ALVEE
   </text>
 
-  <!-- Subtitle Box -->
-  <rect x="250" y="210" width="300" height="40" fill="#000" stroke="#ff00ff" stroke-width="2" />
-  <text x="400" y="238" text-anchor="middle" font-family="'Courier New', monospace" font-weight="bold" font-size="20" fill="#ffffff" letter-spacing="2">
-    SYSTEM.OVERRIDE(ACTIVE)
+  <!-- Subtitle: Terminal Output -->
+  <text x="400" y="260" text-anchor="middle" font-family="'Courier New', monospace" font-size="24" fill="#ff00ff" filter="url(#neonGlow)" letter-spacing="3">
+    [ SYSTEM ONLINE ]
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2s" fill="freeze" />
   </text>
 
-  <!-- Role Tags -->
-  <g transform="translate(400, 290)" text-anchor="middle">
-    <text x="-130" y="0" fill="#00ff41" font-family="monospace" font-size="14">&gt; FULLSTACK</text>
-    <text x="0" y="0" fill="#00ff41" font-family="monospace" font-size="14">&gt; AI_ENGINEER</text>
-    <text x="130" y="0" fill="#00ff41" font-family="monospace" font-size="14">&gt; CYBER_SEC</text>
+  <!-- Role Tags as 'Processes' -->
+  <g transform="translate(400, 320)" text-anchor="middle" font-family="monospace" font-size="16" fill="#00ff41">
+    <text x="-200" y="0" opacity="0">
+      PID: 001 [FULLSTACK]
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="2.5s" fill="freeze" />
+    </text>
+    <text x="0" y="0" opacity="0">
+      PID: 002 [AI_CORE]
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="3.0s" fill="freeze" />
+    </text>
+    <text x="200" y="0" opacity="0">
+      PID: 003 [SEC_OPS]
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="3.5s" fill="freeze" />
+    </text>
   </g>
 
-  <!-- Scanline -->
-  <rect width="800" height="2" fill="rgba(0, 255, 65, 0.5)">
-    <animate attributeName="y" from="0" to="400" dur="3s" repeatCount="indefinite" />
+  <!-- Blinking Cursor at bottom -->
+  <rect x="50" y="360" width="15" height="4" fill="#00ff41">
+     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
   </rect>
+  <text x="75" y="365" font-family="monospace" font-size="14" fill="#00ff41">awaiting_input_</text>
 
 </svg>
