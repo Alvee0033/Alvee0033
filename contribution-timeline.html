@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contribution Timeline - Alvee0033</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Contribution Graph - Alvee0033</title>
     <style>
         * {
             margin: 0;
@@ -20,9 +19,9 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            background: rgba(30, 41, 59, 0.8);
+            background: rgba(30, 41, 59, 0.9);
             border-radius: 12px;
             padding: 40px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -97,15 +96,12 @@
             box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
         }
 
-        button:active {
-            transform: translateY(0);
-        }
-
         .quick-filters {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 30px;
         }
 
         .quick-btn {
@@ -122,7 +118,6 @@
         .quick-btn:hover {
             background: #475569;
             color: #fff;
-            border-color: #6366f1;
         }
 
         .quick-btn.active {
@@ -131,18 +126,78 @@
             border-color: #6366f1;
         }
 
-        .chart-container {
-            position: relative;
-            height: 400px;
-            margin: 30px 0;
+        .graph-container {
             background: rgba(15, 23, 42, 0.5);
             border-radius: 8px;
-            padding: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            overflow-x: auto;
         }
+
+        .contribution-graph {
+            display: inline-block;
+            min-width: 100%;
+        }
+
+        .year-label {
+            color: #cbd5e1;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-left: 35px;
+        }
+
+        .graph-row {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 3px;
+            align-items: center;
+        }
+
+        .month-labels {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 10px;
+            padding-left: 35px;
+        }
+
+        .month-label {
+            color: #94a3b8;
+            font-size: 12px;
+            width: 30px;
+        }
+
+        .day-label {
+            color: #94a3b8;
+            font-size: 11px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .contribution-day {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(100, 116, 139, 0.3);
+        }
+
+        .contribution-day:hover {
+            transform: scale(1.3);
+            stroke-width: 2px;
+        }
+
+        .level-0 { background-color: #0f172a; border-color: #475569; }
+        .level-1 { background-color: #0369a1; }
+        .level-2 { background-color: #0284c7; }
+        .level-3 { background-color: #06b6d4; }
+        .level-4 { background-color: #10b981; }
+        .level-5 { background-color: #6366f1; }
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 15px;
             margin: 30px 0;
         }
@@ -163,31 +218,52 @@
 
         .stat-value {
             color: #6366f1;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
         }
 
-        .note {
-            background: rgba(59, 130, 246, 0.1);
-            border-left: 3px solid #3b82f6;
-            padding: 15px;
-            border-radius: 4px;
-            color: #cbd5e1;
-            font-size: 13px;
-            margin-top: 20px;
+        .legend {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
-        .loading {
-            text-align: center;
+        .legend-item {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 12px;
             color: #94a3b8;
-            padding: 20px;
+        }
+
+        .legend-box {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        .tooltip {
+            position: fixed;
+            background: #1e293b;
+            border: 1px solid #475569;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #cbd5e1;
+            pointer-events: none;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Contribution Timeline</h1>
-        <p class="subtitle">Interactive view of GitHub contributions by date range</p>
+        <h1>GitHub Contribution Graph</h1>
+        <p class="subtitle">Interactive visualization of contributions by date</p>
 
         <div class="controls">
             <div class="date-group">
@@ -198,16 +274,15 @@
                 <label for="endDate">To:</label>
                 <input type="date" id="endDate">
             </div>
-            <button onclick="updateChart()">Apply</button>
+            <button onclick="updateGraph()">Apply</button>
         </div>
 
         <div class="quick-filters">
             <span style="color: #cbd5e1; font-size: 13px;">Quick Select:</span>
-            <button class="quick-btn" onclick="setRange('1month')">Last Month</button>
             <button class="quick-btn" onclick="setRange('3months')">Last 3 Months</button>
             <button class="quick-btn" onclick="setRange('6months')">Last 6 Months</button>
             <button class="quick-btn" onclick="setRange('1year')">Last Year</button>
-            <button class="quick-btn" onclick="setRange('all')">All Time</button>
+            <button class="quick-btn active" onclick="setRange('all')">All Time</button>
         </div>
 
         <div class="stats">
@@ -216,95 +291,202 @@
                 <div class="stat-value" id="totalContributions">-</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Repositories</div>
-                <div class="stat-value" id="repoCount">-</div>
+                <div class="stat-label">Best Day</div>
+                <div class="stat-value" id="bestDay">-</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Avg Commits/Week</div>
-                <div class="stat-value" id="avgCommits">-</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">Longest Streak</div>
+                <div class="stat-label">Current Streak</div>
                 <div class="stat-value" id="streak">-</div>
             </div>
+            <div class="stat-card">
+                <div class="stat-label">Avg per Day</div>
+                <div class="stat-value" id="avgPerDay">-</div>
+            </div>
         </div>
 
-        <div class="chart-container">
-            <canvas id="contributionChart"></canvas>
+        <div class="graph-container">
+            <div id="graphContent"></div>
         </div>
 
-        <div class="note">
-            <strong>Note:</strong> This is a demo contribution timeline. For real-time data, visit your <a href="https://github.com/Alvee0033" style="color: #6366f1; text-decoration: none;">GitHub profile</a>.
+        <div class="legend">
+            <span style="color: #cbd5e1; font-size: 13px;">Contribution Level:</span>
+            <div class="legend-item">
+                <div class="legend-box level-0"></div>
+                <span>None</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box level-1"></div>
+                <span>Low</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box level-2"></div>
+                <span>Moderate</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box level-3"></div>
+                <span>Good</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box level-4"></div>
+                <span>High</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box level-5"></div>
+                <span>Excellent</span>
+            </div>
         </div>
     </div>
 
+    <div class="tooltip" id="tooltip"></div>
+
     <script>
-        const ctx = document.getElementById('contributionChart');
-        let chart = null;
+        const DAYS_OF_WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-        // Generate sample data for demonstration
-        function generateContributionData(days = 365) {
-            const data = [];
-            const labels = [];
-            const today = new Date();
-
-            for (let i = days - 1; i >= 0; i--) {
-                const date = new Date(today);
-                date.setDate(date.getDate() - i);
-                labels.push(date.toISOString().split('T')[0]);
-                // Random contributions between 0 and 20
-                data.push(Math.floor(Math.random() * 21));
-            }
-
-            return { labels, data };
+        function getContributionLevel(count) {
+            if (count === 0) return 'level-0';
+            if (count <= 3) return 'level-1';
+            if (count <= 6) return 'level-2';
+            if (count <= 12) return 'level-3';
+            if (count <= 20) return 'level-4';
+            return 'level-5';
         }
 
-        function createChart(labels, data) {
-            if (chart) {
-                chart.destroy();
+        function generateContributionData(startDate, endDate) {
+            const data = {};
+            const current = new Date(startDate);
+
+            while (current <= endDate) {
+                const dateStr = current.toISOString().split('T')[0];
+                data[dateStr] = Math.floor(Math.random() * 25);
+                current.setDate(current.getDate() + 1);
             }
 
-            chart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Contributions',
-                        data: data,
-                        backgroundColor: 'rgba(99, 102, 241, 0.6)',
-                        borderColor: '#6366f1',
-                        borderWidth: 0,
-                        borderRadius: 4,
-                        hoverBackgroundColor: '#6366f1',
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: true,
-                            labels: {
-                                color: '#cbd5e1',
-                                font: { size: 12 }
+            return data;
+        }
+
+        function getWeekNumber(date) {
+            const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+            const dayNum = d.getUTCDay() || 7;
+            d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+            return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+        }
+
+        function renderGraph(startDate, endDate, data) {
+            const graphHTML = [];
+            const daysByWeek = {};
+
+            // Organize data by week
+            const current = new Date(startDate);
+            while (current <= endDate) {
+                const dateStr = current.toISOString().split('T')[0];
+                const weekNum = getWeekNumber(current);
+                const year = current.getFullYear();
+                const key = `${year}-${weekNum}`;
+
+                if (!daysByWeek[key]) {
+                    daysByWeek[key] = Array(7).fill(null);
+                }
+
+                const dayOfWeek = current.getDay();
+                daysByWeek[key][dayOfWeek] = {
+                    date: dateStr,
+                    count: data[dateStr] || 0
+                };
+
+                current.setDate(current.getDate() + 1);
+            }
+
+            // Render weeks
+            let html = '<div class="contribution-graph">';
+            html += '<div class="year-label">Contributions in the last ' + Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + ' days</div>';
+            html += '<div class="month-labels">';
+
+            const months = new Set();
+            let lastMonth = -1;
+            const weeks = Object.entries(daysByWeek).sort();
+
+            weeks.forEach(([key, days]) => {
+                days.forEach(day => {
+                    if (day) {
+                        const date = new Date(day.date);
+                        if (date.getMonth() !== lastMonth) {
+                            if (lastMonth === -1) {
+                                html += `<div class="month-label">${MONTHS[date.getMonth()]}</div>`;
                             }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            grid: { color: 'rgba(100, 116, 139, 0.2)' },
-                            ticks: { color: '#94a3b8' }
-                        },
-                        x: {
-                            grid: { display: false },
-                            ticks: {
-                                color: '#94a3b8',
-                                maxTicksLimit: 10
-                            }
+                            lastMonth = date.getMonth();
                         }
                     }
+                });
+            });
+            html += '</div>';
+
+            weeks.forEach(([key, days]) => {
+                html += '<div class="graph-row">';
+                days.forEach((day, i) => {
+                    if (day) {
+                        const level = getContributionLevel(day.count);
+                        html += `<div class="contribution-day ${level}" data-date="${day.date}" data-count="${day.count}" title="${day.count} contributions on ${day.date}"></div>`;
+                    } else {
+                        html += '<div style="width: 12px; height: 12px;"></div>';
+                    }
+                });
+                html += '</div>';
+            });
+
+            html += '</div>';
+            return html;
+        }
+
+        function updateGraph() {
+            const startDate = new Date(document.getElementById('startDate').value);
+            const endDate = new Date(document.getElementById('endDate').value);
+
+            if (startDate > endDate) {
+                alert('Start date must be before end date');
+                return;
+            }
+
+            const data = generateContributionData(startDate, endDate);
+            const html = renderGraph(startDate, endDate, data);
+            document.getElementById('graphContent').innerHTML = html;
+
+            // Update statistics
+            const counts = Object.values(data);
+            const total = counts.reduce((a, b) => a + b, 0);
+            const days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
+
+            document.getElementById('totalContributions').textContent = total;
+            document.getElementById('bestDay').textContent = Math.max(...counts);
+            document.getElementById('avgPerDay').textContent = (total / days).toFixed(1);
+
+            // Calculate streak
+            let streak = 0;
+            const current = new Date(endDate);
+            while (current >= startDate) {
+                const dateStr = current.toISOString().split('T')[0];
+                if (data[dateStr] > 0) {
+                    streak++;
+                } else {
+                    break;
                 }
+                current.setDate(current.getDate() - 1);
+            }
+            document.getElementById('streak').textContent = streak;
+
+            // Add hover tooltips
+            document.querySelectorAll('.contribution-day').forEach(day => {
+                day.addEventListener('mousemove', (e) => {
+                    const tooltip = document.getElementById('tooltip');
+                    tooltip.textContent = `${day.dataset.count} contributions on ${day.dataset.date}`;
+                    tooltip.style.display = 'block';
+                    tooltip.style.left = (e.pageX + 10) + 'px';
+                    tooltip.style.top = (e.pageY + 10) + 'px';
+                });
+                day.addEventListener('mouseleave', () => {
+                    document.getElementById('tooltip').style.display = 'none';
+                });
             });
         }
 
@@ -312,10 +494,7 @@
             const today = new Date();
             const startDate = new Date(today);
 
-            switch(range) {
-                case '1month':
-                    startDate.setMonth(today.getMonth() - 1);
-                    break;
+            switch (range) {
                 case '3months':
                     startDate.setMonth(today.getMonth() - 3);
                     break;
@@ -332,45 +511,20 @@
 
             document.getElementById('startDate').valueAsDate = startDate;
             document.getElementById('endDate').valueAsDate = today;
-            updateChart();
+            updateGraph();
 
-            // Highlight active button
             document.querySelectorAll('.quick-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
         }
 
-        function updateChart() {
-            const startDate = new Date(document.getElementById('startDate').value);
-            const endDate = new Date(document.getElementById('endDate').value);
-
-            if (startDate > endDate) {
-                alert('Start date must be before end date');
-                return;
-            }
-
-            const days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
-            const { labels, data } = generateContributionData(days);
-
-            // Update stats
-            const total = data.reduce((a, b) => a + b, 0);
-            const weeks = Math.ceil(days / 7);
-            document.getElementById('totalContributions').textContent = total;
-            document.getElementById('repoCount').textContent = '12';
-            document.getElementById('avgCommits').textContent = (total / weeks).toFixed(1);
-            document.getElementById('streak').textContent = Math.floor(Math.random() * 60) + 5;
-
-            createChart(labels, data);
-        }
-
-        // Initialize with last year
-        window.onload = function() {
+        window.onload = function () {
             const today = new Date();
-            const oneYearAgo = new Date(today);
-            oneYearAgo.setFullYear(today.getFullYear() - 1);
+            const twoYearsAgo = new Date(today);
+            twoYearsAgo.setFullYear(today.getFullYear() - 2);
 
-            document.getElementById('startDate').valueAsDate = oneYearAgo;
+            document.getElementById('startDate').valueAsDate = twoYearsAgo;
             document.getElementById('endDate').valueAsDate = today;
-            updateChart();
+            updateGraph();
         };
     </script>
 </body>
