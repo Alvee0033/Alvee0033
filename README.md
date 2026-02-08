@@ -80,7 +80,7 @@ I'm a **Fullstack Developer** and **AI/ML Specialist** from Bangladesh, passiona
 
 <div align="center">
 
-  <img align="center" src="./languages.svg" alt="Top Languages" width="49%"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alvee0033&theme=radical&hide_border=true&layout=compact" alt="Top Languages" width="49%"/>
   &nbsp;
   <img align="center" src="https://streak-stats.demolab.com/?user=Alvee0033&theme=radical&hide_border=true" alt="GitHub Streak" width="49%"/>
 
