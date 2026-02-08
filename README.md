@@ -107,27 +107,6 @@ Building the future, one commit at a time.
 
 <br/>
 
-## 🚀 PROJECTS_INITIATED
-
-<div align="center">
-<table>
-  <tr>
-    <td width="50%">
-      <a href="https://github.com/Alvee0033/hisab">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=hisab&theme=radical&hide_border=true" alt="hisab" />
-      </a>
-    </td>
-    <td width="50%">
-      <a href="https://github.com/Alvee0033/Aidx">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Alvee0033&repo=Aidx&theme=radical&hide_border=true" alt="Aidx" />
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-
-<br/>
-
 ## 🎯 OBJECTIVES_2025
 
 - [ ] 🚀 **Open Source**: Major contributions.
