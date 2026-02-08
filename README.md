@@ -92,11 +92,6 @@ I'm a **Fullstack Developer** and **AI/ML Specialist** from Bangladesh, passiona
   <a href="https://github.com/Alvee0033">
     <img src="https://raw.githubusercontent.com/Alvee0033/Alvee0033/output/github-contribution-grid-snake.svg" alt="Contribution Graph" />
   </a>
-  
-  <br/><br/>
-  
-  **Interactive Timeline:** [View detailed contributions with date range selector](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Alvee0033/Alvee0033/main/contribution-timeline.html)
-  
 </div>
 
 ---
