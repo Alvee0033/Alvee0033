@@ -95,7 +95,7 @@ I'm a **Fullstack Developer** and **AI/ML Specialist** from Bangladesh, passiona
   
   <br/><br/>
   
-  **Interactive Timeline:** [View detailed contributions with date range selector](./contribution-timeline.html)
+  **Interactive Timeline:** [View detailed contributions with date range selector](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Alvee0033/Alvee0033/main/contribution-timeline.html)
   
 </div>
 
