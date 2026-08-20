@@ -8,10 +8,14 @@ on:
   # Allows manual run from Actions tab
   workflow_dispatch:
   
-  # Run on push to main branch
+  # Run on push to main branch (excluding SVGs to avoid commit loops)
   push:
     branches:
       - main
+    paths-ignore:
+      - 'streak.svg'
+      - 'stats.svg'
+      - 'languages.svg'
 
 jobs:
   update-profile:
@@ -46,6 +50,7 @@ jobs:
             echo "No stats changes to commit"
           else
             git commit -m "Auto-update profile statistics SVGs [skip ci]"
+            git pull --rebase origin main || true
             git push origin main
           fi
 
