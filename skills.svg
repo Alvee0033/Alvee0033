@@ -1,84 +1,42 @@
-<svg fill="none" viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @keyframes scanline {
-          0% { transform: translateY(-500px); }
-          100% { transform: translateY(500px); }
-        }
-        @keyframes pulse {
-          0%, 100% { opacity: 0.8; }
-          50% { opacity: 0.4; }
-        }
-        .monitor {
-          background: radial-gradient(circle at center, #0d1117 0%, #010409 100%);
-          border: 1px solid #30363d;
-          border-radius: 12px;
-          padding: 30px;
-          color: #c9d1d9;
-          font-family: 'Fira Code', 'Courier New', monospace;
-          font-size: 13px;
-          line-height: 1.6;
-          box-shadow: 0 0 30px rgba(88, 166, 255, 0.15);
-          position: relative;
-          overflow: hidden;
-        }
-        .scanline {
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          background: rgba(88, 166, 255, 0.05);
-          animation: scanline 8s linear infinite;
-          pointer-events: none;
-        }
-        .keyword { color: #ff7b72; font-weight: bold; }
-        .variable { color: #d2a8ff; }
-        .operator { color: #79c0ff; }
-        .string { color: #a5d6ff; }
-        .comment { color: #8b949e; font-style: italic; }
-        .bracket { color: #d2a8ff; }
-        .method { color: #d2a8ff; }
-        .line-num { color: #30363d; margin-right: 15px; user-select: none; }
-        .indent { padding-left: 20px; border-left: 1px solid #30363d; margin-left: 5px; }
-        .tag { background: rgba(88, 166, 255, 0.1); color: #58a6ff; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-left: 10px; }
-        .status-dot { height: 8px; width: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; background: #238636; box-shadow: 0 0 5px #238636; animation: pulse 2s infinite; }
-      </style>
-      <div class="monitor">
-        <div class="scanline"></div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #30363d; padding-bottom: 10px;">
-          <div style="display: flex; gap: 6px;">
-            <div style="height: 12px; width: 12px; border-radius: 50%; background: #ff5f56;"></div>
-            <div style="height: 12px; width: 12px; border-radius: 50%; background: #ffbd2e;"></div>
-            <div style="height: 12px; width: 12px; border-radius: 50%; background: #27c93f;"></div>
-          </div>
-          <div style="color: #8b949e; font-size: 11px; letter-spacing: 1px;">DEBUGGER ACTIVE | SYSTEM_INITIALIZED.PY</div>
-        </div>
-        
-        <div><span class="line-num">01</span><span class="keyword">import</span> <span class="variable">ai_vision_core</span> <span class="keyword">as</span> <span class="variable">avc</span> <span class="tag">EXPERT</span></div>
-        <div><span class="line-num">02</span><span class="keyword">from</span> <span class="variable">high_performance_web</span> <span class="keyword">import</span> <span class="variable">next_engine</span> <span class="tag">EXPERT</span></div>
-        <div><span class="line-num">03</span></div>
-        <div><span class="line-num">04</span><span class="keyword">class</span> <span class="variable">EngineerProfile</span><span class="bracket">(</span><span class="keyword">DevStack</span><span class="bracket">)</span>:</div>
-        <div class="indent">
-          <div><span class="line-num">05</span><span class="keyword">def</span> <span class="method">__init__</span><span class="bracket">(</span><span class="variable">self</span><span class="bracket">)</span>:</div>
-          <div class="indent">
-            <div><span class="line-num">06</span><span class="variable">self</span>.<span class="variable">core_languages</span> <span class="operator">=</span> <span class="bracket">[</span><span class="string">"Python"</span>, <span class="string">"Next.js"</span>, <span class="string">"TypeScript"</span><span class="bracket">]</span></div>
-            <div><span class="line-num">07</span><span class="variable">self</span>.<span class="variable">vision_stack</span> <span class="operator">=</span> <span class="bracket">{</span><span class="string">"framework"</span>: <span class="string">"MediaPipe"</span>, <span class="string">"lib"</span>: <span class="string">"PyTorch"</span><span class="bracket">}</span></div>
-            <div><span class="line-num">08</span><span class="variable">self</span>.<span class="variable">infrastructure</span> <span class="operator">=</span> <span class="bracket">[</span><span class="string">"Docker"</span>, <span class="string">"Nginx"</span>, <span class="string">"Firebase"</span><span class="bracket">]</span></div>
-          </div>
-          <div><span class="line-num">09</span></div>
-          <div><span class="line-num">10</span><span class="keyword">async def</span> <span class="method">deploy_solution</span><span class="bracket">(</span><span class="variable">self</span>, <span class="variable">complexity</span><span class="bracket">)</span>:</div>
-          <div class="indent">
-            <div><span class="line-num">11</span><span class="comment"># Implementing engineering excellence...</span></div>
-            <div><span class="line-num">12</span><span class="keyword">await</span> <span class="variable">self</span>.<span class="variable">render_stunning_ui</span><span class="bracket">(</span><span class="bracket">)</span></div>
-            <div><span class="line-num">13</span><span class="keyword">return</span> <span class="variable">Status</span>.<span class="variable">SUCCESS</span> <span class="tag">OPTIMIZED</span></div>
-          </div>
-        </div>
-        
-        <div style="margin-top: 30px; padding-top: 15px; border-top: 1px dashed #30363d;">
-          <span class="status-dot"></span><span style="color: #8b949e; font-size: 12px;">SYSTEM_LOAD: PREPARING STUNNING LAYOUT... COMPLETE</span>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+<svg viewBox="0 0 800 240" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skillsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f14"/>
+      <stop offset="100%" stop-color="#111822"/>
+    </linearGradient>
+    <filter id="neonSkills" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="796" height="236" rx="10" fill="url(#skillsBg)" stroke="#30363d" stroke-width="1.5" />
+  
+  <rect x="2" y="2" width="796" height="32" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <rect x="2" y="22" width="796" height="12" fill="#161b22" />
+  
+  <circle cx="25" cy="17" r="5" fill="#ff5f56" />
+  <circle cx="42" cy="17" r="5" fill="#ffbd2e" />
+  <circle cx="59" cy="17" r="5" fill="#27c93f" />
+  
+  <text x="400" y="21" text-anchor="middle" fill="#8b949e" font-family="'Fira Code', monospace" font-size="11">engineer_pipeline.py</text>
+
+  <g font-family="'Fira Code', 'Courier New', monospace" font-size="13">
+    <text x="35" y="65" fill="#8b949e"># Active Engineering Architecture</text>
+    <text x="35" y="95" fill="#c9d1d9">
+      <tspan fill="#ff7b72">from</tspan> <tspan fill="#79c0ff">ai_systems</tspan> <tspan fill="#ff7b72">import</tspan> <tspan fill="#d2a8ff">VisionCore, LLMOrchestrator</tspan>
+    </text>
+    <text x="35" y="125" fill="#c9d1d9">
+      <tspan fill="#ff7b72">from</tspan> <tspan fill="#79c0ff">cloud_infra</tspan> <tspan fill="#ff7b72">import</tspan> <tspan fill="#d2a8ff">Microservices, AsyncPipelines</tspan>
+    </text>
+    <text x="35" y="165" fill="#c9d1d9">
+      <tspan fill="#79c0ff">async def</tspan> <tspan fill="#d2a8ff">build_future</tspan>():
+    </text>
+    <text x="65" y="195" fill="#c9d1d9">
+      <tspan fill="#ff7b72">return</tspan> <tspan fill="#a5d6ff">"Delivering resilient solutions with 99.9% precision"</tspan>
+    </text>
+  </g>
 </svg>
- village

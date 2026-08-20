@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 200" width="495" height="200">
+  <defs>
+    <linearGradient id="streakBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="streakBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7b72"/>
+      <stop offset="50%" stop-color="#f0883e"/>
+      <stop offset="100%" stop-color="#d2a8ff"/>
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff2a5f"/>
+      <stop offset="50%" stop-color="#ff7a00"/>
+      <stop offset="100%" stop-color="#ffe600"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .card-title { font: 700 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f0883e; letter-spacing: 1.5px; text-transform: uppercase; }
+    .stat-num { font: 800 24px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .stat-lbl { font: 600 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #8b949e; letter-spacing: 0.5px; text-transform: uppercase; }
+    .sub-lbl { font: 500 10px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #6e7681; }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="1.5" y="1.5" width="492" height="197" rx="12" fill="url(#streakBg)" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M 15 1.5 L 480 1.5" stroke="url(#streakBorder)" stroke-width="2.5" stroke-linecap="round" filter="url(#neonGlow)"/>
+
+  <!-- Card Header -->
+  <g transform="translate(25, 28)">
+    <circle cx="6" cy="6" r="4" fill="#f0883e" filter="url(#neonGlow)"/>
+    <text x="18" y="10" class="card-title">GitHub Activity Streak</text>
+  </g>
+
+  <!-- Stat 1: Total Contributions -->
+  <g transform="translate(85, 115)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#21262d" stroke-width="4.5"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#58a6ff" stroke-width="4.5" stroke-dasharray="251" stroke-dashoffset="35" stroke-linecap="round" filter="url(#neonGlow)"/>
+    <text x="0" y="-3" text-anchor="middle" class="stat-num">25,906</text>
+    <text x="0" y="14" text-anchor="middle" class="sub-lbl">Annual Total</text>
+    <text x="0" y="55" text-anchor="middle" class="stat-lbl">Contributions</text>
+  </g>
+
+  <!-- Stat 2: Current Streak -->
+  <g transform="translate(247, 98)">
+    <g transform="translate(-13, -42) scale(1.1)">
+      <path d="M12 0 C12 0 17 6.5 17 11.5 C17 15 14.5 18 11.5 18 C8.5 18 6 15 6 11.5 C6 8.5 8.5 5 9.5 2.5 C7.5 5 5 8.5 5 12.5 C5 17.5 8.5 21.5 13.5 21.5 C18.5 21.5 22 17.5 22 12.5 C22 6 12 0 12 0 Z" fill="url(#flameGrad)" filter="url(#neonGlow)"/>
+    </g>
+    <text x="0" y="16" text-anchor="middle" class="stat-num" fill="#ff7b72" filter="url(#neonGlow)">1 Day</text>
+    <text x="0" y="34" text-anchor="middle" class="sub-lbl">Active Now</text>
+    <text x="0" y="72" text-anchor="middle" class="stat-lbl">Current Streak</text>
+  </g>
+
+  <!-- Stat 3: Longest Streak -->
+  <g transform="translate(410, 115)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#21262d" stroke-width="4.5"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#d2a8ff" stroke-width="4.5" stroke-dasharray="251" stroke-dashoffset="55" stroke-linecap="round" filter="url(#neonGlow)"/>
+    <text x="0" y="-3" text-anchor="middle" class="stat-num">176</text>
+    <text x="0" y="14" text-anchor="middle" class="sub-lbl">Days Max</text>
+    <text x="0" y="55" text-anchor="middle" class="stat-lbl">Longest Streak</text>
+    <text x="0" y="68" text-anchor="middle" class="sub-lbl">Aug 17 - Feb 08</text>
+  </g>
+</svg>
