@@ -38,7 +38,7 @@
     <g transform="translate(0, 56)">
       <text x="25" y="10" class="lang-name">TypeScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="87" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
+      <rect x="125" y="1" width="88" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
       <text x="390" y="10" class="lang-pct">35.2%</text>
     </g>
     <!-- Dart: 26.7% -->

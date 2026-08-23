@@ -44,7 +44,7 @@
   <g transform="translate(85, 115)">
     <circle cx="0" cy="0" r="40" fill="none" stroke="#21262d" stroke-width="4.5"/>
     <circle cx="0" cy="0" r="40" fill="none" stroke="#58a6ff" stroke-width="4.5" stroke-dasharray="251" stroke-dashoffset="35" stroke-linecap="round" filter="url(#neonGlow)"/>
-    <text x="0" y="-3" text-anchor="middle" class="stat-num">25,914</text>
+    <text x="0" y="-3" text-anchor="middle" class="stat-num">25,927</text>
     <text x="0" y="14" text-anchor="middle" class="sub-lbl">Annual Total</text>
     <text x="0" y="55" text-anchor="middle" class="stat-lbl">Contributions</text>
   </g>
@@ -54,7 +54,7 @@
     <g transform="translate(-13, -42) scale(1.1)">
       <path d="M12 0 C12 0 17 6.5 17 11.5 C17 15 14.5 18 11.5 18 C8.5 18 6 15 6 11.5 C6 8.5 8.5 5 9.5 2.5 C7.5 5 5 8.5 5 12.5 C5 17.5 8.5 21.5 13.5 21.5 C18.5 21.5 22 17.5 22 12.5 C22 6 12 0 12 0 Z" fill="url(#flameGrad)" filter="url(#neonGlow)"/>
     </g>
-    <text x="0" y="16" text-anchor="middle" class="stat-num" fill="#ff7b72" filter="url(#neonGlow)">4 Days</text>
+    <text x="0" y="16" text-anchor="middle" class="stat-num" fill="#ff7b72" filter="url(#neonGlow)">5 Days</text>
     <text x="0" y="34" text-anchor="middle" class="sub-lbl">Active Now</text>
     <text x="0" y="72" text-anchor="middle" class="stat-lbl">Current Streak</text>
   </g>
@@ -63,9 +63,9 @@
   <g transform="translate(410, 115)">
     <circle cx="0" cy="0" r="40" fill="none" stroke="#21262d" stroke-width="4.5"/>
     <circle cx="0" cy="0" r="40" fill="none" stroke="#d2a8ff" stroke-width="4.5" stroke-dasharray="251" stroke-dashoffset="55" stroke-linecap="round" filter="url(#neonGlow)"/>
-    <text x="0" y="-3" text-anchor="middle" class="stat-num">176</text>
+    <text x="0" y="-3" text-anchor="middle" class="stat-num">169</text>
     <text x="0" y="14" text-anchor="middle" class="sub-lbl">Days Max</text>
     <text x="0" y="55" text-anchor="middle" class="stat-lbl">Longest Streak</text>
-    <text x="0" y="68" text-anchor="middle" class="sub-lbl">Aug 17 - Feb 08</text>
+    <text x="0" y="68" text-anchor="middle" class="sub-lbl">Aug 24 - Feb 08</text>
   </g>
 </svg>
