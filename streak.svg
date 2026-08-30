@@ -63,9 +63,9 @@
   <g transform="translate(410, 115)">
     <circle cx="0" cy="0" r="40" fill="none" stroke="#21262d" stroke-width="4.5"/>
     <circle cx="0" cy="0" r="40" fill="none" stroke="#d2a8ff" stroke-width="4.5" stroke-dasharray="251" stroke-dashoffset="55" stroke-linecap="round" filter="url(#neonGlow)"/>
-    <text x="0" y="-3" text-anchor="middle" class="stat-num">169</text>
+    <text x="0" y="-3" text-anchor="middle" class="stat-num">162</text>
     <text x="0" y="14" text-anchor="middle" class="sub-lbl">Days Max</text>
     <text x="0" y="55" text-anchor="middle" class="stat-lbl">Longest Streak</text>
-    <text x="0" y="68" text-anchor="middle" class="sub-lbl">Aug 24 - Feb 08</text>
+    <text x="0" y="68" text-anchor="middle" class="sub-lbl">Aug 31 - Feb 08</text>
   </g>
 </svg>
