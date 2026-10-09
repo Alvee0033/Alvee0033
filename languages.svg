@@ -34,12 +34,12 @@
   </g>
 
   
-    <!-- TypeScript: 38.1% -->
+    <!-- TypeScript: 38.0% -->
     <g transform="translate(0, 56)">
       <text x="25" y="10" class="lang-name">TypeScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="95" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">38.1%</text>
+      <text x="390" y="10" class="lang-pct">38.0%</text>
     </g>
     <!-- Dart: 24.5% -->
     <g transform="translate(0, 79)">
@@ -52,7 +52,7 @@
     <g transform="translate(0, 102)">
       <text x="25" y="10" class="lang-name">JavaScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="58" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
+      <rect x="125" y="1" width="59" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
       <text x="390" y="10" class="lang-pct">23.6%</text>
     </g>
     <!-- HTML: 7.1% -->
