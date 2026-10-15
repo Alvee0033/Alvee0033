@@ -34,26 +34,26 @@
   </g>
 
   
-    <!-- TypeScript: 38.6% -->
+    <!-- TypeScript: 38.7% -->
     <g transform="translate(0, 56)">
       <text x="25" y="10" class="lang-name">TypeScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="96" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">38.6%</text>
+      <text x="390" y="10" class="lang-pct">38.7%</text>
     </g>
-    <!-- Dart: 24.3% -->
+    <!-- Dart: 24.1% -->
     <g transform="translate(0, 79)">
       <text x="25" y="10" class="lang-name">Dart</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="60" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">24.3%</text>
+      <text x="390" y="10" class="lang-pct">24.1%</text>
     </g>
-    <!-- JavaScript: 23.4% -->
+    <!-- JavaScript: 23.2% -->
     <g transform="translate(0, 102)">
       <text x="25" y="10" class="lang-name">JavaScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="58" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">23.4%</text>
+      <text x="390" y="10" class="lang-pct">23.2%</text>
     </g>
     <!-- HTML: 7.0% -->
     <g transform="translate(0, 125)">
@@ -62,12 +62,12 @@
       <rect x="125" y="1" width="17" height="9" rx="4.5" fill="#e34c26" filter="url(#neonLangGlow)"/>
       <text x="390" y="10" class="lang-pct">7.0%</text>
     </g>
-    <!-- CSS: 3.4% -->
+    <!-- CSS: 3.7% -->
     <g transform="translate(0, 148)">
       <text x="25" y="10" class="lang-name">CSS</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="8" height="9" rx="4.5" fill="#663399" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">3.4%</text>
+      <rect x="125" y="1" width="9" height="9" rx="4.5" fill="#663399" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">3.7%</text>
     </g>
     <!-- Other: 3.3% -->
     <g transform="translate(0, 171)">
