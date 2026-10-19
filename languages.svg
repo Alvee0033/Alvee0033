@@ -34,33 +34,33 @@
   </g>
 
   
-    <!-- TypeScript: 38.7% -->
+    <!-- TypeScript: 39.1% -->
     <g transform="translate(0, 56)">
       <text x="25" y="10" class="lang-name">TypeScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="96" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">38.7%</text>
+      <rect x="125" y="1" width="97" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">39.1%</text>
     </g>
-    <!-- Dart: 24.1% -->
+    <!-- Dart: 23.9% -->
     <g transform="translate(0, 79)">
       <text x="25" y="10" class="lang-name">Dart</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="60" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">24.1%</text>
+      <rect x="125" y="1" width="59" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">23.9%</text>
     </g>
-    <!-- JavaScript: 23.2% -->
+    <!-- JavaScript: 23.1% -->
     <g transform="translate(0, 102)">
       <text x="25" y="10" class="lang-name">JavaScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="58" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">23.2%</text>
+      <rect x="125" y="1" width="57" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">23.1%</text>
     </g>
-    <!-- HTML: 7.0% -->
+    <!-- HTML: 6.9% -->
     <g transform="translate(0, 125)">
       <text x="25" y="10" class="lang-name">HTML</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="17" height="9" rx="4.5" fill="#e34c26" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">7.0%</text>
+      <text x="390" y="10" class="lang-pct">6.9%</text>
     </g>
     <!-- CSS: 3.7% -->
     <g transform="translate(0, 148)">
