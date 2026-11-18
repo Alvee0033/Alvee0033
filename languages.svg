@@ -34,33 +34,33 @@
   </g>
 
   
-    <!-- TypeScript: 41.2% -->
+    <!-- TypeScript: 41.0% -->
     <g transform="translate(0, 56)">
       <text x="25" y="10" class="lang-name">TypeScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="103" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">41.2%</text>
+      <rect x="125" y="1" width="102" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">41.0%</text>
     </g>
-    <!-- Dart: 23.9% -->
+    <!-- Dart: 24.3% -->
     <g transform="translate(0, 79)">
       <text x="25" y="10" class="lang-name">Dart</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="59" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">23.9%</text>
+      <rect x="125" y="1" width="60" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">24.3%</text>
     </g>
-    <!-- JavaScript: 22.8% -->
+    <!-- JavaScript: 22.6% -->
     <g transform="translate(0, 102)">
       <text x="25" y="10" class="lang-name">JavaScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="56" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">22.8%</text>
+      <text x="390" y="10" class="lang-pct">22.6%</text>
     </g>
-    <!-- HTML: 6.4% -->
+    <!-- HTML: 6.3% -->
     <g transform="translate(0, 125)">
       <text x="25" y="10" class="lang-name">HTML</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="15" height="9" rx="4.5" fill="#e34c26" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">6.4%</text>
+      <text x="390" y="10" class="lang-pct">6.3%</text>
     </g>
     <!-- CSS: 3.3% -->
     <g transform="translate(0, 148)">
