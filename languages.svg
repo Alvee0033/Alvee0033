@@ -34,33 +34,33 @@
   </g>
 
   
-    <!-- TypeScript: 41.2% -->
+    <!-- TypeScript: 41.4% -->
     <g transform="translate(0, 56)">
       <text x="25" y="10" class="lang-name">TypeScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="103" height="9" rx="4.5" fill="#3178c6" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">41.2%</text>
+      <text x="390" y="10" class="lang-pct">41.4%</text>
     </g>
-    <!-- Dart: 24.1% -->
+    <!-- Dart: 24.0% -->
     <g transform="translate(0, 79)">
       <text x="25" y="10" class="lang-name">Dart</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="60" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">24.1%</text>
+      <rect x="125" y="1" width="59" height="9" rx="4.5" fill="#00B4AB" filter="url(#neonLangGlow)"/>
+      <text x="390" y="10" class="lang-pct">24.0%</text>
     </g>
     <!-- JavaScript: 22.4% -->
     <g transform="translate(0, 102)">
       <text x="25" y="10" class="lang-name">JavaScript</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
-      <rect x="125" y="1" width="56" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
+      <rect x="125" y="1" width="55" height="9" rx="4.5" fill="#f1e05a" filter="url(#neonLangGlow)"/>
       <text x="390" y="10" class="lang-pct">22.4%</text>
     </g>
-    <!-- HTML: 6.3% -->
+    <!-- HTML: 6.2% -->
     <g transform="translate(0, 125)">
       <text x="25" y="10" class="lang-name">HTML</text>
       <rect x="125" y="1" width="250" height="9" rx="4.5" fill="#21262d"/>
       <rect x="125" y="1" width="15" height="9" rx="4.5" fill="#e34c26" filter="url(#neonLangGlow)"/>
-      <text x="390" y="10" class="lang-pct">6.3%</text>
+      <text x="390" y="10" class="lang-pct">6.2%</text>
     </g>
     <!-- CSS: 3.5% -->
     <g transform="translate(0, 148)">
